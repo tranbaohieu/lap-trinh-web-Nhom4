@@ -18,6 +18,9 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->integer('role_id');
+            $table->integer('company_id')->nullable();
+            $table->boolean('deleted')->default(false);  
             $table->rememberToken();
             $table->timestamps();
         });
@@ -30,6 +33,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::dropIfExists('users');
     }
 }
