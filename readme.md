@@ -15,6 +15,17 @@ HTML, CSS
 - composer install
 - php artisan migrate
 - php artisan db:seed
+- php artisan ser
 
 4. Truy cập:
 - localhost:8080/
+
+5. Chức năng:
+- Đăng ký tài khoản người tìm việc.
+- Đăng nhập tài khoảng người tìm việc.
+- Apply CV.
+- Xem thông tin tuyển dụng.
+- Đăng ký tài khoản nhà tuyển dụng.
+- Đăng nhập tài khoảng nhà tuyển dụng.
+- Đăng thông tin tuyển dụng.
+- Xem CV.
